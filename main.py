@@ -28,7 +28,7 @@ if will_rain:
     message = client.messages \
         .create(
         body="It's going to rain today! take an umbrella☂️",
-        from_=os.environ.get|("FROM_PH"),
+        from_=os.environ.get("FROM_PH"),
         to=os.environ.get("TO_PH")
     )
     print(message.status)
